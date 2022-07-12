@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+ .process{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    height: auto;
+    width: auto;
+    display: flex;
+}
+.col{
+    height: auto;
+    width: auto;
+    display: flex;
+    margin-top: 50px;
+}
+.circle{
+    height: 65px;
+    width: 65px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+.circle > h1{
+    position:absolute ;
+    right: 21px;
+    top: 10px;
+}
+
+.circle2{
+    height: 65px;
+    width: 65px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+.circle2 > h1{
+    position:absolute ;
+    right: 21px;
+    top: 10px;
+}
+.circle3{
+    height: 65px;
+    width: 65px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+.circle3 > h1{
+    position:absolute ;
+    right: 21px;
+    top: 10px;
+} 
+.circle4{
+    height: 65px;
+    width: 65px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+.circle4 > h1{
+    position:absolute ;
+    right: 21px;
+    top: 10px;
+}
+.line{
+    height: 0.5rem;
+    width: 50px;
+    margin-top: 30px;
+    /* background-color: blue; */
+}
+#prog1 , #prog2 , #prog3{
+    height: 100%;
+    width: 0;
+    background-color: blue;
+    transition:width 1s ease;
+}
+.line2{
+    height: 2px;
+    width: 50px;
+    margin-top: 30px;
+    
+}
+.line3{
+    height: 2px;
+    width: 50px;
+    margin-top: 30px;
+
+}
+#btn1{
+    height: 30px;
+    width: auto;
+    padding: 5px;
+    background-color:blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn2{
+    height: 30px;
+    width: 60px;
+    padding: 5px;
+    background-color:blueviolet;
+    border-radius: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+} 
+
+
+

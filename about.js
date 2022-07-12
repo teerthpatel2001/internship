@@ -30,3 +30,36 @@ window.addEventListener('scroll',()=>{
         
     }
 } );
+
+let counts=setInterval(updated);
+let upto=0;
+function updated(){
+    var count= document.getElementById("counter1");
+    count.innerHTML=++upto;
+    if(upto===200)
+    {
+        clearInterval(counts);
+    }
+}
+
+let counts2=setInterval(updated2);
+let upto2=0;
+function updated2(){
+    var count2= document.getElementById("counter2");
+    count2.innerHTML=++upto2;
+    if(upto2===500)
+    {
+        clearInterval(counts2);
+    }
+}
+
+let counts3=setInterval(updated3);
+let upto3=0;
+function updated3(){
+    var count3= document.getElementById("counter3");
+    count3.innerHTML=++upto3;
+    if(upto3===1000)
+    {
+        clearInterval(counts3);
+    }
+}

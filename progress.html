@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+    <div class="process">
+        <div class="row">
+        <div class="circle"><h1>1</h1></div>
+        <div class="line" id="line1"><div id="prog1"></div></div>
+        <div class="circle"><h1>2</h1></div>
+        <div class="line" id="line2"><div id="prog2"></div></div>
+        <div class="circle"><h1>3</h1></div>
+        <div class="line" id="line3"><div id="prog3"></div></div>
+        <div class="circle"><h1>4</h1></div>
+    </div>
+        <div class="col">
+        <button id="btn1" onclick="prevstep()">Previous</button>
+        <button id="btn2" onclick="nextstep()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        
+        let step = 1;
+
+        function nextstep(){
+            if(step > 4) return;
+            document.getElementById(`prog${step}`).style.width = "100%";
+            step++;
+        }
+
+        function prevstep(){
+            if(step < 2) return;
+            document.getElementById(`prog${step-1}`).style.width ="0";
+            step--;
+        }
+        
+    </script>
+
+</body>
+</html>

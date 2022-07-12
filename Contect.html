@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <!-- navbar -->
+
+    <div class="header_home">
+        <div class="navbar">
+          <div class="header">
+            <img src="logo 1.jpg" alt="img" class="img1" />
+          </div>
+          <div class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+  
+            <li><a href="Activity.html">Activity</a></li>
+            <li><a href="Project.html">Project</a></li>
+            
+            <li><a href="Gallery.html">Gallery</a></li>
+            <div class="home">
+                <li><a href="Contect.html">Contect</a></li>
+                <div class="line"></div>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <!-- main -->
+
+      <div class="main">
+        <div class="title">
+            <h1>CONTACT ME</h1>
+            <div class="line1"></div>
+            <p class="para">Here is how you can reach me</p>
+        </div>
+        <div class="main-part1">
+            <div class="input">
+            <label class="label" for="inp">Name</label>
+            <input type="text" class="inp" required/>
+            </div>
+            <div class="input">
+                <label class="label" for="inp">Subject</label>
+                <input type="text" class="inp" required/>
+            </div>
+            <div class="input">
+                <label class="label" for="inp">Email</label>
+                <input type="text" class="inp" required/>
+            </div>
+            <div class="input">
+                <label class="label" for="inp">Phone No</label>
+                <input type="text" class="inp" required/>
+            </div>
+        </div>
+        <div class="textarea">
+        <textarea class="main-text" id="" cols="150" rows="10" placeholder="Enter message"></textarea>
+        <button class="btn">Submit</button>
+    </div>
+    </div>
+    <!-- form close -->
+
+    <div class="address">
+        <div class="detail">
+            <h1>ADDRESS</h1>
+            <p>204 copper leaf,<br>
+                opp. Parshwanath Jain mandir,<br>
+                AEC Char Rasta, Bhuyangdev,<br>
+                Ahmedabad, Gujarat 380061</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7701401025224!2d72.53969141440403!3d23.032210521748713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84c1a4ade439%3A0xb8612522ff348477!2sATIRA%20Jogging%20Track%2C%20University%20Area%2C%20Ahmedabad%2C%20Gujarat%20380009!5e0!3m2!1sen!2sin!4v1657202162324!5m2!1sen!2sin" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="main-footer">
+        <div class="footer">
+          <div class="discription1">
+            <div class="center">
+              <h2 class="uline">Contact me</h2>
+            </div>
+            <div class="f-underline"></div>
+            <div class="f-part1">
+              <div class="footer-flex">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>503, Panchmo bhag, Patel Vas, Visalpur,Ahmedabad-382210</p>
+              </div>
+  
+              <div class="footer-flex">
+                <h3>@</h3>
+                <p>teerthpatel2009@gmail.com</p>
+              </div>
+  
+              <div class="footer-flex">
+                <i class="fa-solid fa-phone-flip logo"></i>
+                <p>9512865480</p>
+              </div>
+  
+              <div class="footer-flex">
+                <i class="fa-brands fa-whatsapp logo"></i>
+                <p>9512865480</p>
+              </div>
+  
+              <div class="footer-flex">
+                <i class="fa-brands fa-instagram logo"></i>
+                <a
+                  href="https://instagram.com/teerth_patel_01?igshid=YmMyMTA2M2Y="
+                  class="logo"
+                  >Teerth_patel_001</a
+                >
+              </div>
+            </div>
+          </div>
+  
+          <div class="discription2">
+            <h2 class="uline">follow Me</h2>
+            <div class="f-underline"></div>
+            <p style="margin-top: 20px">
+              Near, 204 Copper Leaf,<br />Opp. Parshwanath Jain Mandir<br />AEC
+              Char Rasta, Bhuyangdev,<br />Ahmedabad, Gujarat 380061
+            </p>
+          </div>
+        </div>
+  
+        <div class="full-line"></div>
+        <div class="copywrite">
+          <h3>Copyright © 2022 By Teerth Patel</h3>
+        </div>
+      </div>
+
+
+
+
+    <script>
+        let content = document.querySelectorAll('.input > label');
+        content.forEach((item)=>{
+            item.innerHTML = item.innerHTML
+            .split('')
+            .map((elem,index) =>{
+                return(
+                    `<span style="transition-delay:${(index+1)*80}ms" >${elem}</span>`
+                    );
+                    console.log(`${elem}`);
+            })
+            .join('')
+        }
+        )
+
+    </script>
+
+</body>
+</html>
